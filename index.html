@@ -8,150 +8,156 @@
     <title>CSE110 Lab2</title>
     <link rel="icon" href="icons8-puzzle.svg">
 </head>
-<header id="home">
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#attendance">Attendance</a></li>
-            <li><a href="#agenda">Agenda</a></li>
-            <li><a href="#media">Media</a></li>
-            <li><a href="#misc">Miscellaneous</a></li>
-        </ul>
-    </nav>
-    <h1 id="mmTitle">Pomodoro Timer First Brainstorm</h1>
-    <hr>
-    <p id="mmTopic"><span>Clarify</span> the general direction and deliverables
-        for this project</p>
-    <p id="mmDate">10/2/2021</p>
-</header>
-<main>
-    <div id="mmSummary">
-        <details>
-            <summary>Meeting Minutes Summary</summary>
-            <p>The meeting concluded with theme and features determined. Theme
-                is set to create a professional feel where workers are able to
-                easily locate each features included in the app. Features
-                include a pomodoro timer where users can set the timer, change
-                tasks, alter the intervals of each short and long breaks
-            </p>
-        </details>
-    </div>
-    <section id="attendance">
-        <h2>Attendance List</h2>
-        <ul>
-            <li>Presley</li>
-            <li>John</li>
-            <li>Eric</li>
-            <li>Matthew</li>
-        </ul>
-    </section>
-    <section id="agenda">
-        <h2>Agenda</h2>
-        <ol>
-            <li>Decide on the <strong>theme</strong> of the Pomodoro Timer</li>
-            <li>Decide on the <em>features</em> of the Timer</li>
-            <li>Determine the <b>tools</b> to be used to create the Timer</li>
-            <li>Create a simple <i>schedule</i> for each project deliverable
-            </li>
-        </ol>
-    </section>
-    <section id="mmNext">
-        <h2>Next Meeting</h2>
-        <p>Continue to discuss on the creation of a deliverable schedule and
-            come to a conclusion
-        </p>
-    </section>
-    <section id="media">
-        <h2>Media</h2>
-        <ul>
-            <li>
-                <h3>Image</h3>
-                <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--_yYlhybf--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/dq00shcbvsje5lfulaom.png"
-                    alt="The General Process of the pomodoro timer"
-                    width="500" />
-            </li>
-            <li>
-                <h3>Video</h3>
-                <video controls width="250">
-                    <source src="lab2vid.MOV" />
-                    This browser does not support embedded video
-                </video>
-            </li>
-            <li>
-                <h3>Audio</h3>
-                <audio controls>
-                    <source src="lab2audio.m4a" />
-                    This browser does not support embedded audio
-                </audio>
-            </li>
-        </ul>
-    </section>
-    <section id="misc">
-        <h2>Miscellaneous</h2>
-        <ul>
-            <li>
-                <h3>Comments/Questions/Concerns:</h3>
-                <form action="">
-                    <label id="name">Full Name:
-                        <input type="text" name="name"
-                            placeholder="Enter your full name" />
-                    </label>
-                    <label id="date">Date:
-                        <input type="date" name="date" />
-                    </label>
-                    <label id="role">Role:
-                        <input list="roleList" id="role" />
-                    </label>
-                    <datalist id="roleList">
-                        <option value="Programmer">Programmer</option>
-                        <option value="Supervisor">Supervisor</option>
-                        <option value="Planner">Planner</option>
-                    </datalist>
-                    <label for="year">Year: </label>
-                    <select name="year" id="year">
-                        <option value="Freshmen">Freshmen</option>
-                        <option value="Sophomore">Sophomore</option>
-                        <option value="Junior">Junior</option>
-                        <option value="Senior">Senior</option>
-                    </select>
-                    <label id="msg">Message:
-                        <textarea name="msg" id="msg" cols="30" rows="10"
-                            placeholder="Enter your message"></textarea>
-                    </label>
-                    <button type="button">Submit</button>
-                </form>
-            </li>
-            <li>
-                <fieldset>
-                    <legend>Preferred way of meeting</legend>
-                    <label>In-person
-                        <input type="checkbox" name="role">
-                    </label>
-                    <label>Online
-                        <input type="checkbox" name="role">
-                    </label>
-                </fieldset>
-            </li>
-            <li>
-                <fieldset>
-                    <legend>Prefer morning or evening</legend>
-                    <label>Morning
-                        <input type="radio" name="role">
-                    </label>
-                    <label>Evening
-                        <input type="radio" name="role">
-                    </label>
-                </fieldset>
-            </li>
-        </ul>
-    </section>
-</main>
-<footer>
-    <p>Minutes submitted by: Matthew</p>
-    <p>Approved by: Eric</p>
-</footer>
 
 <body>
+    <header id="home">
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#attendance">Attendance</a></li>
+                <li><a href="#agenda">Agenda</a></li>
+                <li><a href="#media">Media</a></li>
+                <li><a href="#misc">Miscellaneous</a></li>
+            </ul>
+        </nav>
+        <h1 id="mmTitle">Pomodoro Timer First Brainstorm</h1>
+        <hr>
+        <p id="mmTopic"><span>Clarify</span> the general direction and
+            deliverables
+            for this project</p>
+        <p id="mmDate">10/2/2021</p>
+    </header>
+    <main>
+        <div id="mmSummary">
+            <details>
+                <summary>Meeting Minutes Summary</summary>
+                <p>The meeting concluded with theme and features determined.
+                    Theme
+                    is set to create a professional feel where workers are able
+                    to
+                    easily locate each features included in the app. Features
+                    include a pomodoro timer where users can set the timer,
+                    change
+                    tasks, alter the intervals of each short and long breaks
+                </p>
+            </details>
+        </div>
+        <section id="attendance">
+            <h2>Attendance List</h2>
+            <ul>
+                <li>Presley</li>
+                <li>John</li>
+                <li>Eric</li>
+                <li>Matthew</li>
+            </ul>
+        </section>
+        <section id="agenda">
+            <h2>Agenda</h2>
+            <ol>
+                <li>Decide on the <strong>theme</strong> of the Pomodoro Timer
+                </li>
+                <li>Decide on the <em>features</em> of the Timer</li>
+                <li>Determine the <b>tools</b> to be used to create the Timer
+                </li>
+                <li>Create a simple <i>schedule</i> for each project deliverable
+                </li>
+            </ol>
+        </section>
+        <section id="mmNext">
+            <h2>Next Meeting</h2>
+            <p>Continue to discuss on the creation of a deliverable schedule and
+                come to a conclusion
+            </p>
+        </section>
+        <section id="media">
+            <h2>Media</h2>
+            <ul>
+                <li>
+                    <h3>Image</h3>
+                    <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--_yYlhybf--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/dq00shcbvsje5lfulaom.png"
+                        alt="The General Process of the pomodoro timer"
+                        width="500" />
+                </li>
+                <li>
+                    <h3>Video</h3>
+                    <video controls width="250">
+                        <source src="lab2vid.MOV" />
+                        This browser does not support embedded video
+                    </video>
+                </li>
+                <li>
+                    <h3>Audio</h3>
+                    <audio controls>
+                        <source src="lab2audio.m4a" />
+                        This browser does not support embedded audio
+                    </audio>
+                </li>
+            </ul>
+        </section>
+        <section id="misc">
+            <h2>Miscellaneous</h2>
+            <ul>
+                <li>
+                    <h3>Comments/Questions/Concerns:</h3>
+                    <form action="#">
+                        <label id="name">Full Name:
+                            <input type="text" name="name"
+                                placeholder="Enter your full name" />
+                        </label>
+                        <label id="date">Date:
+                            <input type="date" name="date" />
+                        </label>
+                        <label id="role">Role:
+                            <input list="roleList" />
+                        </label>
+                        <datalist id="roleList">
+                            <option value="Programmer">Programmer</option>
+                            <option value="Supervisor">Supervisor</option>
+                            <option value="Planner">Planner</option>
+                        </datalist>
+                        <label for="year">Year: </label>
+                        <select name="year" id="year">
+                            <option value="Freshmen">Freshmen</option>
+                            <option value="Sophomore">Sophomore</option>
+                            <option value="Junior">Junior</option>
+                            <option value="Senior">Senior</option>
+                        </select>
+                        <label id="msg">Message:
+                            <textarea name="msg" cols="30" rows="10"
+                                placeholder="Enter your message"></textarea>
+                        </label>
+                        <button type="button">Submit</button>
+                    </form>
+                </li>
+                <li>
+                    <fieldset>
+                        <legend>Preferred way of meeting</legend>
+                        <label>In-person
+                            <input type="checkbox" name="role">
+                        </label>
+                        <label>Online
+                            <input type="checkbox" name="role">
+                        </label>
+                    </fieldset>
+                </li>
+                <li>
+                    <fieldset>
+                        <legend>Prefer morning or evening</legend>
+                        <label>Morning
+                            <input type="radio" name="role">
+                        </label>
+                        <label>Evening
+                            <input type="radio" name="role">
+                        </label>
+                    </fieldset>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>Minutes submitted by: Matthew</p>
+        <p>Approved by: Eric</p>
+    </footer>
 </body>
 
 </html>
