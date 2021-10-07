@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    background-color: rgb(220, 242, 252);
+}
+
+#navbar{
+    border: 1px solid black;
+    text-align: center;
+    text-decoration: none;
+}
+
+#navbar ul li {
+    margin: 0.5rem 0 0.5rem 0;
+}
+
+
