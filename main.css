@@ -1,8 +1,8 @@
 :root {
-    --dark-blue: rgb(53, 53, 148);
-    --light-blue: rgb(220, 242, 252);
-    --mid-blue: rgb(157, 180, 255);
-    --trans-white: rgba(255, 255, 255, 0.76);
+    --dark-blue: hsl(240, 47%, 39%);
+    --light-blue: rgba(220, 242, 252, 0.87);
+    --mid-blue: #9DB4FF;
+    --trans-white: white;
 }
 
 * {
@@ -14,16 +14,19 @@
 
 img {
     width: 100%;
+    height: auto;
 }
 
 h1,h2,h3 {
     margin-top: 1.5rem;
     margin-bottom: 1rem;
-    margin-bottom: 1rem;
 }
 
 p {
-    margin: 0.5rem 0;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 body {
@@ -40,19 +43,34 @@ body {
     color: black;
     background-color: var(--mid-blue);
     border-color: black;
-    border-width: 1px;
+    border-width: 0.0625pc;
     border-style: solid;
-    padding: 0.2em 0.4em;
+    padding: 2pt 5pt;
     border-radius: 20%;
+}
+
+#navbar ul li a:hover {
+    filter: brightness(1.2);
 }
 
 #mmDate {
     margin-top: 1rem;
-    border: 1px solid black; /*test*/
     border-radius: 20%;
     background-color: var(--dark-blue);
     color: white;
     display: inline-block;
+}
+
+#mmSummary summary {
+    text-decoration: underline;
+}
+
+#mmTopic {
+    display: block;
+}
+
+#mmSummary summary:active {
+    background-color: rgba(255, 255, 255, 0.74);
 }
 
 .pStyle {
@@ -65,12 +83,84 @@ body {
     list-style-type: none;
 }
 
+#miscForm {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-shrink: 1;
+    margin: 1rem 0;
+}
+
+#miscForm label > input,
+#miscForm select,
+#miscForm datalist {
+    border: 1px solid black;
+    width: 100%;
+}
+
+button#miscSubmit {
+    margin: auto;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+
+#msg {
+    display: flex;
+    flex-direction: column;
+}
+
 @media screen and (min-width: 48em) {
     #navbar ul {
         display: flex;
         list-style-type: none;
         justify-content: space-evenly;
     }
+
+    img {
+        max-width: 800px;
+    }
+
+    #name {
+        grid-area: name;
+    }
+
+    #date{
+        grid-area: date;
+    }
+
+    #role {
+        grid-area: role;
+    }
+
+    #yearList {
+        grid-area: year;
+    }
+
+    #msg {
+        grid-area: mssg;
+    }
+
+    #miscSubmit {
+        grid-area: subm;
+    }
+
+    #misc h3 {
+        text-align: center;
+    }
+
+    #miscForm {
+        display: grid;
+        grid-template-rows: 0.5fr 0.5fr 2fr 0.5fr;
+        grid-template-areas: "name date"
+                             "role year"
+                             "mssg mssg"
+                             "subm subm";
+        align-items: center;
+        max-width: 75%;
+        margin: auto;
+        
+    }
+
 }
 
 
