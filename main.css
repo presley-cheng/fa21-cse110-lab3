@@ -1,3 +1,9 @@
+:root {
+    --dark-blue: rgb(53, 53, 148);
+    --light-blue: rgb(220, 242, 252);
+    --mid-blue: rgb(157, 180, 255);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -19,7 +25,7 @@ h2,h3 {
 }
 
 body {
-    background-color: rgb(220, 242, 252);
+    background-color: var(--light-blue);
     padding: 0 10px 0 10px;
 }
 
@@ -30,7 +36,7 @@ body {
 
 #navbar ul li a {
     color: black;
-    background-color: rgb(157, 180, 255);
+    background-color: var(--mid-blue);
     border-color: black;
     border-width: 1px;
     border-style: solid;
@@ -41,6 +47,10 @@ body {
 #mmDate {
     margin-top: 1.5rem;
     border: 1px solid black; /*test*/
+    border-radius: 20%;
+    background-color: var(--dark-blue);
+    color: white;
+    display: inline-block;
 }
 
 @media screen and (min-width: 48em) {
