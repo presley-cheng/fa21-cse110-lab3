@@ -47,7 +47,6 @@ h2 ~ p {
 /* Navbar Styling */
 #navbar ul li {
     margin: 1rem 0 1rem 0;
-
 }
 
 #navbar ul li a {
@@ -79,6 +78,7 @@ h2 ~ p {
 
 #mmTopic {
     display: block;
+    position: static;
 }
 
 #mmSummary summary:active {
@@ -124,10 +124,25 @@ button#miscSubmit {
 
 /* Responsive: Styling apply to screen >= 768px */
 @media screen and (min-width: 48em) {
+    #navbar {
+        min-width: 100%;
+        position: fixed;
+        padding-top: 0;
+        z-index: 100;
+    }
+
     #navbar ul {
         display: flex;
         list-style-type: none;
         justify-content: space-evenly;
+    }
+
+    #navbar ul li {
+        margin: 0;
+    }
+
+    #mmTitle {
+        padding-top: 3.5rem;
     }
 
     img {
