@@ -2,6 +2,7 @@
     --dark-blue: rgb(53, 53, 148);
     --light-blue: rgb(220, 242, 252);
     --mid-blue: rgb(157, 180, 255);
+    --trans-white: rgba(255, 255, 255, 0.76);
 }
 
 * {
@@ -18,10 +19,11 @@ img {
 h1,h2,h3 {
     margin-top: 1.5rem;
     margin-bottom: 1rem;
+    margin-bottom: 1rem;
 }
 
-h2,h3 {
-    margin-bottom: 1rem;
+p {
+    margin: 0.5rem 0;
 }
 
 body {
@@ -45,12 +47,22 @@ body {
 }
 
 #mmDate {
-    margin-top: 1.5rem;
+    margin-top: 1rem;
     border: 1px solid black; /*test*/
     border-radius: 20%;
     background-color: var(--dark-blue);
     color: white;
     display: inline-block;
+}
+
+.pStyle {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+    background-color: var(--trans-white);
+    border-radius: 10%;
+    list-style-type: none;
 }
 
 @media screen and (min-width: 48em) {
