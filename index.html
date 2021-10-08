@@ -26,16 +26,17 @@
         </nav>
         <h1 id="mmTitle">Pomodoro Timer First Brainstorm</h1>
         <hr>
+        <p id="mmDate">10/2/2021</p>
         <p id="mmTopic"><span>Clarify</span> the general direction and
             deliverables
             for this project</p>
-        <p id="mmDate">10/2/2021</p>
     </header>
     <main>
         <div id="mmSummary">
             <details>
                 <summary>Meeting Minutes Summary</summary>
-                <p>The meeting concluded with theme and features determined.
+                <p class="pStyle">The meeting concluded with theme and features
+                    determined.
                     Theme
                     is set to create a professional feel where workers are able
                     to
@@ -48,7 +49,7 @@
         </div>
         <section id="attendance">
             <h2>Attendance List</h2>
-            <ul>
+            <ul class="pStyle">
                 <li>Presley</li>
                 <li>John</li>
                 <li>Eric</li>
@@ -57,19 +58,22 @@
         </section>
         <section id="agenda">
             <h2>Agenda</h2>
-            <ol>
-                <li>Decide on the <strong>theme</strong> of the Pomodoro Timer
+            <ol class="pStyle">
+                <li>1. Decide on the <strong>theme</strong> of the Pomodoro
+                    Timer
                 </li>
-                <li>Decide on the <em>features</em> of the Timer</li>
-                <li>Determine the <b>tools</b> to be used to create the Timer
+                <li>2. Decide on the <em>features</em> of the Timer</li>
+                <li>3. Determine the <b>tools</b> to be used to create the Timer
                 </li>
-                <li>Create a simple <i>schedule</i> for each project deliverable
+                <li>4. Create a simple <i>schedule</i> for each project
+                    deliverable
                 </li>
             </ol>
         </section>
         <section id="mmNext">
             <h2>Next Meeting</h2>
-            <p>Continue to discuss on the creation of a deliverable schedule and
+            <p class="pStyle">Continue to discuss on the creation of a
+                deliverable schedule and
                 come to a conclusion
             </p>
         </section>
@@ -103,7 +107,7 @@
             <ul>
                 <li>
                     <h3>Comments/Questions/Concerns:</h3>
-                    <form action="#">
+                    <form action="#" id="miscForm">
                         <label id="name">Full Name:
                             <input type="text" name="name"
                                 placeholder="Enter your full name" />
@@ -111,26 +115,30 @@
                         <label id="date">Date:
                             <input type="date" name="date" />
                         </label>
-                        <label id="role">Role:
-                            <input list="roleList" />
-                        </label>
-                        <datalist id="roleList">
-                            <option value="Programmer">Programmer</option>
-                            <option value="Supervisor">Supervisor</option>
-                            <option value="Planner">Planner</option>
-                        </datalist>
-                        <label for="year">Year: </label>
-                        <select name="year" id="year">
-                            <option value="Freshmen">Freshmen</option>
-                            <option value="Sophomore">Sophomore</option>
-                            <option value="Junior">Junior</option>
-                            <option value="Senior">Senior</option>
-                        </select>
+                        <div id="role">
+                            <label>Role:
+                                <input list="roleList" />
+                            </label>
+                            <datalist id="roleList">
+                                <option value="Programmer">Programmer</option>
+                                <option value="Supervisor">Supervisor</option>
+                                <option value="Planner">Planner</option>
+                            </datalist>
+                        </div>
+                        <div id="yearList">
+                            <label for="year">Year: </label>
+                            <select name="year" id="year">
+                                <option value="Freshmen">Freshmen</option>
+                                <option value="Sophomore">Sophomore</option>
+                                <option value="Junior">Junior</option>
+                                <option value="Senior">Senior</option>
+                            </select>
+                        </div>
                         <label id="msg">Message:
                             <textarea name="msg" cols="30" rows="10"
                                 placeholder="Enter your message"></textarea>
                         </label>
-                        <button type="button">Submit</button>
+                        <button id="miscSubmit" type="button">Submit</button>
                     </form>
                 </li>
                 <li>

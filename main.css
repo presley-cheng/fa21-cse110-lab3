@@ -1,3 +1,10 @@
+:root {
+    --dark-blue: hsl(240, 47%, 39%);
+    --light-blue: rgba(220, 242, 252, 0.87);
+    --mid-blue: #9DB4FF;
+    --trans-white: white;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -5,8 +12,25 @@
     font-family: 'Raleway', sans-serif;
 }
 
+img {
+    width: 100%;
+    height: auto;
+}
+
+h1,h2,h3 {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    margin-left: 0;
+    margin-right: 0;
+}
+
 body {
-    background-color: rgb(220, 242, 252);
+    background-color: var(--light-blue);
     padding: 0 10px 0 10px;
 }
 
@@ -17,10 +41,72 @@ body {
 
 #navbar ul li a {
     color: black;
-    border: 1px solid black;
-    background-color: rgb(157, 180, 255);
-    padding: 0.2em 0.4em;
+    background-color: var(--mid-blue);
+    border-color: black;
+    border-width: 0.0625pc;
+    border-style: solid;
+    padding: 2pt 5pt;
     border-radius: 20%;
+}
+
+#navbar ul li a:hover {
+    filter: brightness(1.2);
+}
+
+#mmDate {
+    margin-top: 1rem;
+    border-radius: 20%;
+    background-color: var(--dark-blue);
+    color: white;
+    display: inline-block;
+}
+
+#mmSummary summary {
+    text-decoration: underline;
+}
+
+#mmTopic {
+    display: block;
+}
+
+#mmSummary summary:active {
+    background-color: rgba(255, 255, 255, 0.74);
+}
+
+.pStyle {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+    background-color: var(--trans-white);
+    border-radius: 10%;
+    list-style-type: none;
+}
+
+#miscForm {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-shrink: 1;
+    margin: 1rem 0;
+}
+
+#miscForm label > input,
+#miscForm select,
+#miscForm datalist {
+    border: 1px solid black;
+    width: 100%;
+}
+
+button#miscSubmit {
+    margin: auto;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+
+#msg {
+    display: flex;
+    flex-direction: column;
 }
 
 @media screen and (min-width: 48em) {
@@ -29,6 +115,52 @@ body {
         list-style-type: none;
         justify-content: space-evenly;
     }
+
+    img {
+        max-width: 800px;
+    }
+
+    #name {
+        grid-area: name;
+    }
+
+    #date{
+        grid-area: date;
+    }
+
+    #role {
+        grid-area: role;
+    }
+
+    #yearList {
+        grid-area: year;
+    }
+
+    #msg {
+        grid-area: mssg;
+    }
+
+    #miscSubmit {
+        grid-area: subm;
+    }
+
+    #misc h3 {
+        text-align: center;
+    }
+
+    #miscForm {
+        display: grid;
+        grid-template-rows: 0.5fr 0.5fr 2fr 0.5fr;
+        grid-template-areas: "name date"
+                             "role year"
+                             "mssg mssg"
+                             "subm subm";
+        align-items: center;
+        max-width: 75%;
+        margin: auto;
+        
+    }
+
 }
 
 
